@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legacy Line Charts v16.0</title>
+    <title>Legacy Line Charts v18.0 – Delano Tigers</title>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -115,713 +115,67 @@
         const SUBSCRIBER_MODE = true;  // Master site = false, Subscriber sites = true
         
         const EMBEDDED_CONFIG = {
-  "siteId": "delano-tigers",
-  "teamSetup": {
-    "teamName": "Delano Tigers",
-    "logo": "https://cdn3.sportngin.com/attachments/team/5112-152073362/1delano-tigers-hockey_large_square_large_square.png",
-    "colors": {
-      "primary": "#000000",
-      "secondary": "#FC6418"
-    },
-    "arena": "Delano Area Sports Arena, Delano",
-    "careerStats": {
-      "HALONEN_DAN": {
-        "type": "skater",
-        "data": {
-          "gp": 51,
-          "g": 21,
-          "a": 36,
-          "pts": 57,
-          "pim": 48,
-          "plusMinus": 18,
-          "fow": 368,
-          "fol": 255,
-          "bs": 93
-        }
-      },
-      "PETERSON_BRY": {
-        "type": "skater",
-        "data": {
-          "gp": 81,
-          "g": 33,
-          "a": 35,
-          "pts": 68,
-          "pim": 51,
-          "plusMinus": 11,
-          "fow": 236,
-          "fol": 237,
-          "bs": 111
-        }
-      },
-      "MCCABE_JOS": {
-        "type": "skater",
-        "data": {
-          "gp": 80,
-          "g": 27,
-          "a": 32,
-          "pts": 59,
-          "pim": 35,
-          "plusMinus": 19,
-          "fow": 60,
-          "fol": 53,
-          "bs": 81
-        }
-      },
-      "HALONEN_LAN": {
-        "type": "skater",
-        "data": {
-          "gp": 27,
-          "g": 13,
-          "a": 16,
-          "pts": 29,
-          "pim": 19,
-          "plusMinus": 17,
-          "fow": 77,
-          "fol": 44,
-          "bs": 63
-        }
-      },
-      "HARGARTEN_MAS": {
-        "type": "skater",
-        "data": {
-          "gp": 75,
-          "g": 32,
-          "a": 40,
-          "pts": 72,
-          "pim": 47,
-          "plusMinus": 37,
-          "fow": 482,
-          "fol": 442,
-          "bs": 65
-        }
-      },
-      "KANGAS_MAR": {
-        "type": "skater",
-        "data": {
-          "gp": 62,
-          "g": 12,
-          "a": 18,
-          "pts": 30,
-          "pim": 84,
-          "plusMinus": 29,
-          "fow": 1,
-          "fol": 0,
-          "bs": 117
-        }
-      },
-      "HALONEN_AAR": {
-        "type": "skater",
-        "data": {
-          "gp": 81,
-          "g": 13,
-          "a": 31,
-          "pts": 44,
-          "pim": 36,
-          "plusMinus": 6,
-          "fow": 0,
-          "fol": 0,
-          "bs": 128
-        }
-      },
-      "KANGAS_BRA": {
-        "type": "skater",
-        "data": {
-          "gp": 54,
-          "g": 13,
-          "a": 17,
-          "pts": 30,
-          "pim": 23,
-          "plusMinus": 6,
-          "fow": 22,
-          "fol": 26,
-          "bs": 76
-        }
-      },
-      "WOLLAK_JAC": {
-        "type": "skater",
-        "data": {
-          "gp": 27,
-          "g": 1,
-          "a": 15,
-          "pts": 16,
-          "pim": 20,
-          "plusMinus": 12,
-          "fow": 0,
-          "fol": 0,
-          "bs": 88
-        }
-      },
-      "GEISLINGER_BRO": {
-        "type": "skater",
-        "data": {
-          "gp": 48,
-          "g": 16,
-          "a": 15,
-          "pts": 31,
-          "pim": 48,
-          "plusMinus": 8,
-          "fow": 86,
-          "fol": 71,
-          "bs": 79
-        }
-      },
-      "PERLICH_JAC": {
-        "type": "skater",
-        "data": {
-          "gp": 52,
-          "g": 6,
-          "a": 12,
-          "pts": 18,
-          "pim": 22,
-          "plusMinus": -7,
-          "fow": 259,
-          "fol": 246,
-          "bs": 55
-        }
-      },
-      "OJA_CON": {
-        "type": "skater",
-        "data": {
-          "gp": 32,
-          "g": 2,
-          "a": 8,
-          "pts": 10,
-          "pim": 0,
-          "plusMinus": 12,
-          "fow": 0,
-          "fol": 0,
-          "bs": 40
-        }
-      },
-      "LINS_EDD": {
-        "type": "skater",
-        "data": {
-          "gp": 53,
-          "g": 0,
-          "a": 7,
-          "pts": 7,
-          "pim": 11,
-          "plusMinus": 12,
-          "fow": 0,
-          "fol": 0,
-          "bs": 53
-        }
-      },
-      "GEYEN_EVA": {
-        "type": "goalie",
-        "data": {
-          "gp": 37,
-          "min": "1863:47",
-          "w": 23,
-          "l": 13,
-          "t": 1,
-          "so": 5,
-          "ga": 104,
-          "sv": 854
-        }
-      },
-      "MATTSON_MAS": {
-        "type": "skater",
-        "data": {
-          "gp": 10,
-          "g": 1,
-          "a": 1,
-          "pts": 2,
-          "pim": 2,
-          "plusMinus": 3,
-          "fow": 2,
-          "fol": 2,
-          "bs": 1
-        }
-      },
-      "HARGARTEN_LIN": {
-        "type": "skater",
-        "data": {
-          "gp": 19,
-          "g": 0,
-          "a": 1,
-          "pts": 1,
-          "pim": 0,
-          "plusMinus": -1,
-          "fow": 2,
-          "fol": 5,
-          "bs": 9
-        }
-      },
-      "BRUETT_GRA": {
-        "type": "skater",
-        "data": {
-          "gp": 21,
-          "g": 0,
-          "a": 1,
-          "pts": 1,
-          "pim": 0,
-          "plusMinus": -6,
-          "fow": 2,
-          "fol": 1,
-          "bs": 6
-        }
-      },
-      "ROBERTSON_LUK": {
-        "type": "skater",
-        "data": {
-          "gp": 15,
-          "g": 0,
-          "a": 0,
-          "pts": 0,
-          "pim": 0,
-          "plusMinus": -1,
-          "fow": 0,
-          "fol": 0,
-          "bs": 3
-        }
-      },
-      "MCCABE_JON": {
-        "type": "skater",
-        "data": {
-          "gp": 15,
-          "g": 0,
-          "a": 0,
-          "pts": 0,
-          "pim": 0,
-          "plusMinus": 1,
-          "fow": 0,
-          "fol": 0,
-          "bs": 1
-        }
-      },
-      "NELSON_DYL": {
-        "type": "skater",
-        "data": {
-          "gp": 26,
-          "g": 0,
-          "a": 0,
-          "pts": 0,
-          "pim": 6,
-          "plusMinus": -11,
-          "fow": 62,
-          "fol": 44,
-          "bs": 42
-        }
-      },
-      "JANIGA_AID": {
-        "type": "goalie",
-        "data": {
-          "gp": 9,
-          "min": "412:51",
-          "w": 1,
-          "l": 5,
-          "t": 1,
-          "so": 0,
-          "ga": 29,
-          "sv": 181
-        }
-      },
-      "HALONEN_BEN": {
-        "type": "skater",
-        "data": {
-          "gp": 12,
-          "g": 0,
-          "a": 0,
-          "pts": 0,
-          "pim": 0,
-          "plusMinus": 0,
-          "fow": 0,
-          "fol": 0,
-          "bs": 1
-        }
-      },
-      "SCHUSTER_OWE": {
-        "type": "skater",
-        "data": {
-          "gp": 1,
-          "g": 0,
-          "a": 0,
-          "pts": 0,
-          "pim": 0,
-          "plusMinus": 0,
-          "fow": 0,
-          "fol": 0,
-          "bs": 0
-        }
-      },
-      "DANIELSON_KEL": {
-        "type": "skater",
-        "data": {
-          "gp": 1,
-          "g": 0,
-          "a": 0,
-          "pts": 0,
-          "pim": 0,
-          "plusMinus": 0,
-          "fow": 0,
-          "fol": 0,
-          "bs": 0
-        }
-      },
-      "TRUAX_LIN": {
-        "type": "goalie",
-        "data": {
-          "gp": 2,
-          "min": "52:24",
-          "w": 1,
-          "l": 0,
-          "t": 0,
-          "so": 0,
-          "ga": 2,
-          "sv": 19
-        }
-      },
-      "COLLINGS_TEA": {
-        "type": "skater",
-        "data": {
-          "gp": 55,
-          "g": 25,
-          "a": 39,
-          "pts": 64,
-          "pim": 31,
-          "plusMinus": 13,
-          "fow": 359,
-          "fol": 357,
-          "bs": 19
-        }
-      },
-      "LINNA_TOD": {
-        "type": "skater",
-        "data": {
-          "gp": 38,
-          "g": 5,
-          "a": 13,
-          "pts": 18,
-          "pim": 6,
-          "plusMinus": 3,
-          "fow": 177,
-          "fol": 166,
-          "bs": 2
-        }
-      },
-      "BRUETT_AND": {
-        "type": "skater",
-        "data": {
-          "gp": 27,
-          "g": 5,
-          "a": 9,
-          "pts": 14,
-          "pim": 10,
-          "plusMinus": 2,
-          "fow": 4,
-          "fol": 4,
-          "bs": 2
-        }
-      },
-      "COPPIN_BRA": {
-        "type": "skater",
-        "data": {
-          "gp": 42,
-          "g": 2,
-          "a": 17,
-          "pts": 19,
-          "pim": 8,
-          "plusMinus": 7,
-          "fow": 0,
-          "fol": 0,
-          "bs": 29
-        }
-      },
-      "HEINZEN_JAK": {
-        "type": "skater",
-        "data": {
-          "gp": 39,
-          "g": 8,
-          "a": 5,
-          "pts": 13,
-          "pim": 15,
-          "plusMinus": 5,
-          "fow": 6,
-          "fol": 6,
-          "bs": 1
-        }
-      },
-      "CAPPELLERI_VIN": {
-        "type": "skater",
-        "data": {
-          "gp": 53,
-          "g": 5,
-          "a": 11,
-          "pts": 16,
-          "pim": 20,
-          "plusMinus": 14,
-          "fow": 0,
-          "fol": 0,
-          "bs": 15
-        }
-      },
-      "HAUKOS_MAX": {
-        "type": "skater",
-        "data": {
-          "gp": 4,
-          "g": 1,
-          "a": 0,
-          "pts": 1,
-          "pim": 0,
-          "plusMinus": 0,
-          "fow": 0,
-          "fol": 1,
-          "bs": 0
-        }
-      },
-      "STIGMAN_JAM": {
-        "type": "goalie",
-        "data": {
-          "gp": 1,
-          "min": "51:00",
-          "w": 1,
-          "l": 0,
-          "t": 0,
-          "so": 1,
-          "ga": 0,
-          "sv": 14
-        }
-      },
-      "TRUAX_DUN": {
-        "type": "skater",
-        "data": {
-          "gp": 1,
-          "g": 0,
-          "a": 0,
-          "pts": 0,
-          "pim": 0,
-          "plusMinus": 0,
-          "fow": 0,
-          "fol": 0,
-          "bs": 0
-        }
-      },
-      "LOFSTEDT_LAD": {
-        "type": "skater",
-        "data": {
-          "gp": 14,
-          "g": 0,
-          "a": 0,
-          "pts": 0,
-          "pim": 0,
-          "plusMinus": 0,
-          "fow": 4,
-          "fol": 4,
-          "bs": 0
-        }
-      },
-      "ALLEN_HUN": {
-        "type": "skater",
-        "data": {
-          "gp": 1,
-          "g": 0,
-          "a": 0,
-          "pts": 0,
-          "pim": 0,
-          "plusMinus": 0,
-          "fow": 0,
-          "fol": 0,
-          "bs": 0
-        }
-      },
-      "NARLOCK_KYL": {
-        "type": "skater",
-        "data": {
-          "gp": 1,
-          "g": 0,
-          "a": 0,
-          "pts": 0,
-          "pim": 0,
-          "plusMinus": 0,
-          "fow": 0,
-          "fol": 0,
-          "bs": 0
-        }
-      },
-      "ENGELMANN_ETH": {
-        "type": "goalie",
-        "data": {
-          "gp": 17,
-          "min": "769:18",
-          "w": 9,
-          "l": 5,
-          "t": 0,
-          "so": 2,
-          "ga": 43,
-          "sv": 359
-        }
-      },
-      "BROWN_WIL": {
-        "type": "skater",
-        "data": {
-          "gp": 28,
-          "g": 21,
-          "a": 20,
-          "pts": 41,
-          "pim": 6,
-          "plusMinus": 20,
-          "fow": 93,
-          "fol": 73,
-          "bs": 27
-        }
-      },
-      "LEWIS_AAR": {
-        "type": "skater",
-        "data": {
-          "gp": 28,
-          "g": 15,
-          "a": 10,
-          "pts": 25,
-          "pim": 38,
-          "plusMinus": 4,
-          "fow": 8,
-          "fol": 9,
-          "bs": 20
-        }
-      },
-      "SCHMIDT_COL": {
-        "type": "skater",
-        "data": {
-          "gp": 28,
-          "g": 2,
-          "a": 15,
-          "pts": 17,
-          "pim": 17,
-          "plusMinus": 2,
-          "fow": 0,
-          "fol": 0,
-          "bs": 34
-        }
-      },
-      "KRUSE_PAT": {
-        "type": "skater",
-        "data": {
-          "gp": 28,
-          "g": 2,
-          "a": 10,
-          "pts": 12,
-          "pim": 16,
-          "plusMinus": -2,
-          "fow": 0,
-          "fol": 0,
-          "bs": 39
-        }
-      },
-      "LEAVER_AID": {
-        "type": "skater",
-        "data": {
-          "gp": 19,
-          "g": 3,
-          "a": 7,
-          "pts": 10,
-          "pim": 10,
-          "plusMinus": 0,
-          "fow": 222,
-          "fol": 167,
-          "bs": 6
-        }
-      },
-      "NIELSEN_COO": {
-        "type": "skater",
-        "data": {
-          "gp": 28,
-          "g": 4,
-          "a": 4,
-          "pts": 8,
-          "pim": 14,
-          "plusMinus": -4,
-          "fow": 3,
-          "fol": 5,
-          "bs": 11
-        }
-      },
-      "TRUAX_NIC": {
-        "type": "skater",
-        "data": {
-          "gp": 25,
-          "g": 3,
-          "a": 4,
-          "pts": 7,
-          "pim": 4,
-          "plusMinus": -5,
-          "fow": 6,
-          "fol": 20,
-          "bs": 16
-        }
-      },
-      "BRUETT_CAD": {
-        "type": "skater",
-        "data": {
-          "gp": 28,
-          "g": 4,
-          "a": 2,
-          "pts": 6,
-          "pim": 24,
-          "plusMinus": -3,
-          "fow": 2,
-          "fol": 1,
-          "bs": 11
-        }
-      },
-      "OJA_JAK": {
-        "type": "skater",
-        "data": {
-          "gp": 19,
-          "g": 1,
-          "a": 3,
-          "pts": 4,
-          "pim": 4,
-          "plusMinus": -6,
-          "fow": 19,
-          "fol": 27,
-          "bs": 9
-        }
-      },
-      "PUPP_ALE": {
-        "type": "skater",
-        "data": {
-          "gp": 17,
-          "g": 0,
-          "a": 2,
-          "pts": 2,
-          "pim": 0,
-          "plusMinus": 5,
-          "fow": 0,
-          "fol": 0,
-          "bs": 7
-        }
-      },
-      "DORSEY_DRE": {
-        "type": "goalie",
-        "data": {
-          "gp": 22,
-          "min": "1065:17",
-          "w": 12,
-          "l": 10,
-          "t": 0,
-          "so": 2,
-          "ga": 62,
-          "sv": 447
-        }
-      }
-    },
-    "pronunciations": {}
-  },
-  "careerSeasonData": {
-    "season1": "",
-    "season2": "",
-    "season3": ""
-  }
-};
-        /* Example for subscriber site:
-        const EMBEDDED_CONFIG = {
-          siteId: 'east-grand-forks',
-          teamSetup: { teamName: '...', logo: '...', colors: {...}, arena: '...', pronunciations: {...} },
-          careerStats: { LASTNAME_FIR: { type: 'skater', data: {...} }, ... },
-          careerSeasonData: { season1: '...', season2: '...', season3: '...' }
+          siteId: 'delano-tigers',
+          teamSetup: {
+            teamName: "Delano Tigers",
+            logo: "https://cdn3.sportngin.com/attachments/team/5112-152073362/1delano-tigers-hockey_large_square_large_square.png",
+            colors: { primary: "#000000", secondary: "#FC6418" },
+            arena: "Delano Area Sports Arena, Delano",
+            careerStats: {
+              "HALONEN_DAN": { type: "skater", data: { gp: 51, g: 21, a: 36, pts: 57, pim: 48, plusMinus: 18, fow: 368, fol: 255, bs: 36 } },
+              "PETERSON_BRY": { type: "skater", data: { gp: 81, g: 33, a: 35, pts: 68, pim: 51, plusMinus: 11, fow: 236, fol: 237, bs: 57 } },
+              "MCCABE_JOS": { type: "skater", data: { gp: 80, g: 27, a: 32, pts: 59, pim: 35, plusMinus: 19, fow: 60, fol: 53, bs: 19 } },
+              "HALONEN_LAN": { type: "skater", data: { gp: 27, g: 13, a: 16, pts: 29, pim: 19, plusMinus: 17, fow: 77, fol: 44, bs: 20 } },
+              "HARGARTEN_MAS": { type: "skater", data: { gp: 75, g: 32, a: 40, pts: 72, pim: 47, plusMinus: 37, fow: 482, fol: 442, bs: 44 } },
+              "KANGAS_MAR": { type: "skater", data: { gp: 62, g: 12, a: 18, pts: 30, pim: 84, plusMinus: 29, fow: 1, fol: 0, bs: 91 } },
+              "HALONEN_AAR": { type: "skater", data: { gp: 81, g: 13, a: 31, pts: 44, pim: 36, plusMinus: 6, fow: 0, fol: 0, bs: 78 } },
+              "KANGAS_BRA": { type: "skater", data: { gp: 54, g: 13, a: 17, pts: 30, pim: 23, plusMinus: 6, fow: 22, fol: 26, bs: 18 } },
+              "WOLLAK_JAC": { type: "skater", data: { gp: 27, g: 1, a: 15, pts: 16, pim: 20, plusMinus: 12, fow: 0, fol: 0, bs: 11 } },
+              "GEISLINGER_BRO": { type: "skater", data: { gp: 48, g: 16, a: 15, pts: 31, pim: 48, plusMinus: 8, fow: 86, fol: 71, bs: 17 } },
+              "PERLICH_JAC": { type: "skater", data: { gp: 52, g: 6, a: 12, pts: 18, pim: 22, plusMinus: -7, fow: 259, fol: 246, bs: 14 } },
+              "OJA_CON": { type: "skater", data: { gp: 32, g: 2, a: 8, pts: 10, pim: 0, plusMinus: 12, fow: 0, fol: 0, bs: 15 } },
+              "LINS_EDD": { type: "skater", data: { gp: 53, g: 0, a: 7, pts: 7, pim: 11, plusMinus: 12, fow: 0, fol: 0, bs: 39 } },
+              "GEYEN_EVA": { type: "goalie", data: { gp: 37, min: "1863:47", w: 23, l: 13, t: 1, so: 5, ga: 104, sv: 854 } },
+              "MATTSON_MAS": { type: "skater", data: { gp: 10, g: 1, a: 1, pts: 2, pim: 2, plusMinus: 3, fow: 2, fol: 2, bs: 0 } },
+              "HARGARTEN_LIN": { type: "skater", data: { gp: 19, g: 0, a: 1, pts: 1, pim: 0, plusMinus: -1, fow: 2, fol: 5, bs: 1 } },
+              "BRUETT_GRA": { type: "skater", data: { gp: 21, g: 0, a: 1, pts: 1, pim: 0, plusMinus: -6, fow: 2, fol: 1, bs: 4 } },
+              "ROBERTSON_LUK": { type: "skater", data: { gp: 15, g: 0, a: 0, pts: 0, pim: 0, plusMinus: -1, fow: 0, fol: 0, bs: 1 } },
+              "MCCABE_JON": { type: "skater", data: { gp: 15, g: 0, a: 0, pts: 0, pim: 0, plusMinus: 1, fow: 0, fol: 0, bs: 1 } },
+              "NELSON_DYL": { type: "skater", data: { gp: 26, g: 0, a: 0, pts: 0, pim: 6, plusMinus: -11, fow: 62, fol: 44, bs: 4 } },
+              "JANIGA_AID": { type: "goalie", data: { gp: 9, min: "412:51", w: 1, l: 5, t: 1, so: 0, ga: 29, sv: 181 } },
+              "HALONEN_BEN": { type: "skater", data: { gp: 12, g: 0, a: 0, pts: 0, pim: 0, plusMinus: 0, fow: 0, fol: 0, bs: 0 } },
+              "SCHUSTER_OWE": { type: "skater", data: { gp: 1, g: 0, a: 0, pts: 0, pim: 0, plusMinus: 0, fow: 0, fol: 0, bs: 0 } },
+              "DANIELSON_KEL": { type: "skater", data: { gp: 1, g: 0, a: 0, pts: 0, pim: 0, plusMinus: 0, fow: 0, fol: 0, bs: 0 } },
+              "TRUAX_LIN": { type: "goalie", data: { gp: 2, min: "52:24", w: 1, l: 0, t: 0, so: 0, ga: 2, sv: 19 } },
+              "COLLINGS_TEA": { type: "skater", data: { gp: 55, g: 25, a: 39, pts: 64, pim: 31, plusMinus: 13, fow: 359, fol: 357, bs: 26 } },
+              "LINNA_TOD": { type: "skater", data: { gp: 38, g: 5, a: 13, pts: 18, pim: 6, plusMinus: 3, fow: 177, fol: 166, bs: 8 } },
+              "BRUETT_AND": { type: "skater", data: { gp: 27, g: 5, a: 9, pts: 14, pim: 10, plusMinus: 2, fow: 4, fol: 4, bs: 13 } },
+              "COPPIN_BRA": { type: "skater", data: { gp: 42, g: 2, a: 17, pts: 19, pim: 8, plusMinus: 7, fow: 0, fol: 0, bs: 65 } },
+              "HEINZEN_JAK": { type: "skater", data: { gp: 39, g: 8, a: 5, pts: 13, pim: 15, plusMinus: 5, fow: 6, fol: 6, bs: 7 } },
+              "CAPPELLERI_VIN": { type: "skater", data: { gp: 53, g: 5, a: 11, pts: 16, pim: 20, plusMinus: 14, fow: 0, fol: 0, bs: 25 } },
+              "HAUKOS_MAX": { type: "skater", data: { gp: 4, g: 1, a: 0, pts: 1, pim: 0, plusMinus: 0, fow: 0, fol: 1, bs: 0 } },
+              "STIGMAN_JAM": { type: "goalie", data: { gp: 1, min: "51:00", w: 1, l: 0, t: 0, so: 1, ga: 0, sv: 14 } },
+              "TRUAX_DUN": { type: "skater", data: { gp: 1, g: 0, a: 0, pts: 0, pim: 0, plusMinus: 0, fow: 0, fol: 0, bs: 0 } },
+              "LOFSTEDT_LAD": { type: "skater", data: { gp: 14, g: 0, a: 0, pts: 0, pim: 0, plusMinus: 0, fow: 4, fol: 4, bs: 0 } },
+              "ALLEN_HUN": { type: "skater", data: { gp: 1, g: 0, a: 0, pts: 0, pim: 0, plusMinus: 0, fow: 0, fol: 0, bs: 0 } },
+              "NARLOCK_KYL": { type: "skater", data: { gp: 1, g: 0, a: 0, pts: 0, pim: 0, plusMinus: 0, fow: 0, fol: 0, bs: 0 } },
+              "ENGELMANN_ETH": { type: "goalie", data: { gp: 17, min: "769:18", w: 9, l: 5, t: 0, so: 2, ga: 43, sv: 359 } },
+              "BROWN_WIL": { type: "skater", data: { gp: 28, g: 21, a: 20, pts: 41, pim: 6, plusMinus: 20, fow: 93, fol: 73, bs: 18 } },
+              "LEWIS_AAR": { type: "skater", data: { gp: 28, g: 15, a: 10, pts: 25, pim: 38, plusMinus: 4, fow: 8, fol: 9, bs: 20 } },
+              "SCHMIDT_COL": { type: "skater", data: { gp: 28, g: 2, a: 15, pts: 17, pim: 17, plusMinus: 2, fow: 0, fol: 0, bs: 88 } },
+              "KRUSE_PAT": { type: "skater", data: { gp: 28, g: 2, a: 10, pts: 12, pim: 16, plusMinus: -2, fow: 0, fol: 0, bs: 33 } },
+              "LEAVER_AID": { type: "skater", data: { gp: 19, g: 3, a: 7, pts: 10, pim: 10, plusMinus: 0, fow: 222, fol: 167, bs: 21 } },
+              "NIELSEN_COO": { type: "skater", data: { gp: 28, g: 4, a: 4, pts: 8, pim: 14, plusMinus: -4, fow: 3, fol: 5, bs: 20 } },
+              "TRUAX_NIC": { type: "skater", data: { gp: 25, g: 3, a: 4, pts: 7, pim: 4, plusMinus: -5, fow: 6, fol: 20, bs: 11 } },
+              "BRUETT_CAD": { type: "skater", data: { gp: 28, g: 4, a: 2, pts: 6, pim: 24, plusMinus: -3, fow: 2, fol: 1, bs: 7 } },
+              "OJA_JAK": { type: "skater", data: { gp: 19, g: 1, a: 3, pts: 4, pim: 4, plusMinus: -6, fow: 19, fol: 27, bs: 14 } },
+              "PUPP_ALE": { type: "skater", data: { gp: 17, g: 0, a: 2, pts: 2, pim: 0, plusMinus: 5, fow: 0, fol: 0, bs: 8 } },
+              "DORSEY_DRE": { type: "goalie", data: { gp: 22, min: "1065:17", w: 12, l: 10, t: 0, so: 2, ga: 62, sv: 447 } }
+            },
+            pronunciations: {}
+          },
+          careerSeasonData: { season1: "", season2: "", season3: "" }
         };
-        */
         // ============================================================
 
         // ============================================================
@@ -1117,17 +471,30 @@
 
           const [myTeamData, setMyTeamData] = useState(getInitialMyTeamData);
 
-          const [opponentData, setOpponentData] = useState({
-            teamName: '',
-            nickname: '',
-            record: { w: 0, l: 0, t: 0 },
-            section: '',
-            conference: '',
-            stats: { ppPct: 0, pkPct: 0, gpg: 0, gapg: 0, ppGoals: 0, ppOpp: 0, pkOpp: 0, pkGoalsAllowed: 0 },
-            roster: [],
-            headCoach: { name: '', careerRecord: { w: 0, l: 0, t: 0 }, seasonRecord: { w: 0, l: 0, t: 0 } },
-            assistantCoaches: []
-          });
+          const getInitialOpponentData = () => {
+            try {
+              const saved = localStorage.getItem('hockey-scout-opponentData');
+              if (saved) {
+                console.log('📋 Loading saved opponentData from localStorage');
+                return JSON.parse(saved);
+              }
+            } catch (error) {
+              console.error('Error loading opponentData:', error);
+            }
+            return {
+              teamName: '',
+              nickname: '',
+              record: { w: 0, l: 0, t: 0 },
+              section: '',
+              conference: '',
+              stats: { ppPct: 0, pkPct: 0, gpg: 0, gapg: 0, ppGoals: 0, ppOpp: 0, pkOpp: 0, pkGoalsAllowed: 0 },
+              roster: [],
+              headCoach: { name: '', careerRecord: { w: 0, l: 0, t: 0 }, seasonRecord: { w: 0, l: 0, t: 0 } },
+              assistantCoaches: []
+            };
+          };
+
+          const [opponentData, setOpponentData] = useState(getInitialOpponentData);
 
           // Initialize lines from localStorage
           const getInitialLines = () => {
@@ -1253,11 +620,24 @@
           const [helpContent, setHelpContent] = useState({ title: '', steps: [] });
           const [importStep, setImportStep] = useState('myTeamHome');
           const [importText, setImportText] = useState('');
+          const [safariDetected, setSafariDetected] = useState(false);
           const [spreadsheetData, setSpreadsheetData] = useState([]);
           const [spreadsheetHeaders, setSpreadsheetHeaders] = useState([]);
           const [selectedPlayer, setSelectedPlayer] = useState(null);
-          const [opponentLogo, setOpponentLogo] = useState(null);
-          const [opponentColors, setOpponentColors] = useState({ primary: '#dc2626', secondary: '#991b1b' });
+          const [opponentLogo, setOpponentLogo] = useState(() => {
+            try {
+              const saved = localStorage.getItem('hockey-scout-opponentLogo');
+              if (saved) return JSON.parse(saved);
+            } catch {}
+            return null;
+          });
+          const [opponentColors, setOpponentColors] = useState(() => {
+            try {
+              const saved = localStorage.getItem('hockey-scout-opponentColors');
+              if (saved) return JSON.parse(saved);
+            } catch {}
+            return { primary: '#dc2626', secondary: '#991b1b' };
+          });
           const [oppSpecialTeamsManual, setOppSpecialTeamsManual] = useState(() => {
             try {
               const saved = localStorage.getItem('hockey-scout-oppSpecialTeams');
@@ -1529,6 +909,15 @@
           useEffect(() => {
             try { localStorage.setItem('hockey-scout-oppSpecialTeams', JSON.stringify(oppSpecialTeamsManual)); } catch {}
           }, [oppSpecialTeamsManual]);
+          useEffect(() => {
+            try { localStorage.setItem('hockey-scout-opponentData', JSON.stringify(opponentData)); console.log('💾 Saved opponentData to localStorage'); } catch {}
+          }, [opponentData]);
+          useEffect(() => {
+            try { localStorage.setItem('hockey-scout-opponentLogo', JSON.stringify(opponentLogo)); } catch {}
+          }, [opponentLogo]);
+          useEffect(() => {
+            try { localStorage.setItem('hockey-scout-opponentColors', JSON.stringify(opponentColors)); } catch {}
+          }, [opponentColors]);
 
           // Helper Functions
           
@@ -1658,11 +1047,11 @@
             const exportObj = {
               _exportInfo: {
                 exportDate: new Date().toISOString(),
-                version: '16.0',
+                version: '18.0',
                 teamName: myTeamSetup.teamName,
                 description: 'Full team configuration for subscriber site build'
               },
-              myTeamSetup: {
+              teamSetup: {
                 teamName: myTeamSetup.teamName,
                 logo: myTeamSetup.logo,
                 colors: myTeamSetup.colors,
@@ -1846,7 +1235,7 @@
                     const totalFOL = savedCareer.data.fol || 0;
                     player.careerStats = {
                       ...savedCareer.data,
-                      faceoffPct: (totalFOW + totalFOL > 0) ? ((totalFOW / (totalFOW + totalFOL)) * 100).toFixed(1) : '0.0',
+                      faceoffPct: (totalFOW + totalFOL > 0) ? Math.round((totalFOW / (totalFOW + totalFOL)) * 100).toString() : '0',
                       pim: savedCareer.data.pim || 0
                     };
                     console.log(`✓ Loaded SKATER career for ${player.name}`);
@@ -2577,212 +1966,176 @@
             try {
               console.log('=== parsePlayerStats called ===');
               const lines = text.split('\n').map(l => l.trim()).filter(l => l);
-              
               const updatedRoster = [...existingRoster];
               let inSkaterSection = false;
               let inGoalieSection = false;
-              
+
               for (let i = 0; i < lines.length; i++) {
                 const line = lines[i];
-                
-                if (line.toUpperCase() === 'SKATER') {
-                  inSkaterSection = true;
-                  inGoalieSection = false;
-                  continue;
-                }
-                if (line.toUpperCase() === 'GOALIE') {
-                  inSkaterSection = false;
-                  inGoalieSection = true;
-                  continue;
-                }
-                
-                if (line === '#' || line === 'Name' || line === 'GP' || line.includes('AVG PTS')) continue;
-                
-                const fields = line.split('\t').filter(f => f.trim());
-                
+
+                if (line.toUpperCase() === 'SKATER') { inSkaterSection=true; inGoalieSection=false; continue; }
+                if (line.toUpperCase() === 'GOALIE') { inSkaterSection=false; inGoalieSection=true; continue; }
+                if (line === '#' || line === 'Name' || line === 'GP' ||
+                    line.includes('AVG PTS') || line === 'Pos' || line === 'Grade' ||
+                    line === 'PosGrade') continue;
+                if (!inSkaterSection && !inGoalieSection) continue;
+
+                // Split on tabs - the player stats page always produces tab-separated output
+                const fields = line.split('\t').map(f => f.trim()).filter(f => f);
                 if (fields.length < 3) continue;
-                
+
                 const number = fields[0];
-                let name = fields[1];
-                
                 if (!/^\d+$/.test(number)) continue;
-                
-                // Detect new format: check if fields[2] is a position (F, D, G, D|F, F|D)
-                const hasNewFormat = fields[2] && /^(F|D|G|D\|F|F\|D)$/i.test(fields[2]);
-                
-                // Extract Pos and Grade from new format (if present)
-                let statsPosition = null;
+
+                let name = fields[1];
+
+                // Detect 25-26+ format: fields[2] is position (F D G D|F F|D etc)
+                const hasNewFormat = fields[2] && /^(F|D|G|D\|F|F\|D|F\|G|G\|F)$/i.test(fields[2]);
+                let fieldOffset = 0;
+                let statsPos = null;
                 let statsGrade = null;
-                let fieldOffset = 0;  // Offset for stat field indices
-                
+
                 if (hasNewFormat) {
-                  statsPosition = fields[2];  // F, D, G, or D|F
-                  statsGrade = fields[3];     // 9, 10, 11, or 12
-                  fieldOffset = 2;             // Stats start at fields[4] instead of fields[2]
-                  console.log(`📊 New format detected for ${name}: Pos=${statsPosition}, Grade=${statsGrade}`);
+                  // fields[2]=Pos, fields[3]=Grade, stats start at fields[4]
+                  statsPos   = fields[2].toUpperCase();
+                  statsGrade = fields[3];
+                  fieldOffset = 2;
                 }
-                
-                // Strip (Capt.) from name for matching
-                const cleanName = name.replace(/\s*\(Capt\.?\)/i, '').trim();
-                
+
+                // First position wins for dual-position players: D|F -> D, F|D -> F
+                const normalizedStatsPos = statsPos ? statsPos.split('|')[0] : null;
+
+                // Clean name
+                const cleanName = name.replace(/\s*\(Capt\.?\)/i, '').replace(/\*/g, '').trim();
+
                 if (inSkaterSection) {
-                  const player = updatedRoster.find(p => 
-                    p.number === number && 
+                  const player = updatedRoster.find(p =>
+                    p.number === number &&
                     p.position !== 'G' &&
-                    (p.name === cleanName || p.name === name)
+                    (p.name === cleanName ||
+                     p.name.replace(/\s*\(Capt\.?\)/i,'').replace(/\*/g,'').trim() === cleanName ||
+                     p.lastName === cleanName.split(' ').pop())
                   );
-                  
+
                   if (player && fields.length >= (6 + fieldOffset)) {
-                    // Validate Pos and Grade against roster (if new format)
-                    if (hasNewFormat) {
-                      const normalizedStatsPos = (statsPosition === 'D|F' || statsPosition === 'F|D') ? 'D' : statsPosition;
-                      const normalizedRosterPos = (player.position === 'D|F' || player.position === 'F|D') ? 'D' : player.position;
-                      
-                      if (normalizedRosterPos !== normalizedStatsPos) {
-                        console.warn(`⚠️ Position mismatch for ${cleanName}: Roster=${player.position}, Stats=${statsPosition}`);
-                      }
-                      if (player.grade !== statsGrade) {
-                        console.warn(`⚠️ Grade mismatch for ${cleanName}: Roster=${player.grade}, Stats=${statsGrade}`);
-                      }
-                    }
-                    
                     const currentStats = {
-                      gp: parseInt(fields[2 + fieldOffset]) || 0,
-                      g: parseInt(fields[3 + fieldOffset]) || 0,
-                      a: parseInt(fields[4 + fieldOffset]) || 0,
-                      pts: parseInt(fields[5 + fieldOffset]) || 0,
-                      ppg: parseInt(fields[8 + fieldOffset]) || 0,
-                      ppa: parseInt(fields[9 + fieldOffset]) || 0,
-                      sh: parseInt(fields[10 + fieldOffset]) || 0,
-                      sha: parseInt(fields[11 + fieldOffset]) || 0,
-                      pim: parseInt(fields[13 + fieldOffset]) || 0,
-                      fow: parseInt(fields[14 + fieldOffset]) || 0,
-                      fol: parseInt(fields[15 + fieldOffset]) || 0,
+                      gp:        parseInt(fields[2 + fieldOffset])  || 0,
+                      g:         parseInt(fields[3 + fieldOffset])  || 0,
+                      a:         parseInt(fields[4 + fieldOffset])  || 0,
+                      pts:       parseInt(fields[5 + fieldOffset])  || 0,
+                      ppg:       parseInt(fields[8 + fieldOffset])  || 0,
+                      ppa:       parseInt(fields[9 + fieldOffset])  || 0,
+                      sh:        parseInt(fields[10 + fieldOffset]) || 0,
+                      sha:       parseInt(fields[11 + fieldOffset]) || 0,
+                      pim:       parseInt(fields[13 + fieldOffset]) || 0,
+                      fow:       parseInt(fields[14 + fieldOffset]) || 0,
+                      fol:       parseInt(fields[15 + fieldOffset]) || 0,
+                      bs:        parseInt(fields[18 + fieldOffset]) || 0,
                       plusMinus: parseInt(fields[19 + fieldOffset]) || 0
                     };
-                    
-                    player.stats = currentStats;
-                    
-                    const baseCareer = player.baseCareerStats || { gp: 0, g: 0, a: 0, pts: 0, pim: 0, plusMinus: 0, fow: 0, fol: 0, bs: 0 };
-                    const totalFOW = (baseCareer.fow || 0) + currentStats.fow;
-                    const totalFOL = (baseCareer.fol || 0) + currentStats.fol;
-                    const careerFaceoffPct = (totalFOW + totalFOL > 0) ? ((totalFOW / (totalFOW + totalFOL)) * 100).toFixed(1) : '0.0';
-                    
-                    player.careerStats = {
-                      gp: baseCareer.gp + currentStats.gp,
-                      g: baseCareer.g + currentStats.g,
-                      a: baseCareer.a + currentStats.a,
-                      pts: baseCareer.pts + currentStats.pts,
-                      pim: (baseCareer.pim || 0) + currentStats.pim,
-                      plusMinus: baseCareer.plusMinus + currentStats.plusMinus,
-                      faceoffPct: careerFaceoffPct,
-                      fow: totalFOW,
-                      fol: totalFOL
+
+                    // Update grade from stats if roster grade is missing
+                    const newGrade = (statsGrade && !player.grade) ? statsGrade : player.grade;
+
+                    const base = player.baseCareerStats || { gp:0, g:0, a:0, pts:0, pim:0, plusMinus:0, fow:0, fol:0, bs:0 };
+                    const totalFOW = (base.fow||0) + currentStats.fow;
+                    const totalFOL = (base.fol||0) + currentStats.fol;
+                    const foPct = (totalFOW+totalFOL > 0) ? Math.round((totalFOW/(totalFOW+totalFOL))*100).toString() : '0';
+
+                    const idx = updatedRoster.indexOf(player);
+                    updatedRoster[idx] = {
+                      ...player,
+                      grade: newGrade,
+                      stats: currentStats,
+                      careerStats: {
+                        gp:  base.gp  + currentStats.gp,
+                        g:   base.g   + currentStats.g,
+                        a:   base.a   + currentStats.a,
+                        pts: base.pts + currentStats.pts,
+                        pim: (base.pim||0) + currentStats.pim,
+                        plusMinus: base.plusMinus + currentStats.plusMinus,
+                        faceoffPct: foPct, fow: totalFOW, fol: totalFOL,
+                        bs: (base.bs||0) + currentStats.bs
+                      }
                     };
-                    
-                    console.log(`✓ Updated ${cleanName}:`, player.stats, 'Career:', player.careerStats);
-                  }
-                } else if (inGoalieSection) {
-                  const player = updatedRoster.find(p => 
-                    p.number === number && 
-                    p.position === 'G' &&
-                    (p.name === cleanName || p.name === name)
-                  );
-                  
-                  if (player && player.goalieStats && fields.length >= (10 + fieldOffset)) {
-                    // Validate Pos and Grade against roster (if new format)
-                    if (hasNewFormat) {
-                      if (player.position !== statsPosition) {
-                        console.warn(`⚠️ Position mismatch for ${cleanName}: Roster=${player.position}, Stats=${statsPosition}`);
-                      }
-                      if (player.grade !== statsGrade) {
-                        console.warn(`⚠️ Grade mismatch for ${cleanName}: Roster=${player.grade}, Stats=${statsGrade}`);
-                      }
+                    console.log(`\u2713 Updated ${cleanName}: GP=${currentStats.gp} G=${currentStats.g} A=${currentStats.a} PTS=${currentStats.pts} PIM=${currentStats.pim} FOW=${currentStats.fow} FOL=${currentStats.fol} BS=${currentStats.bs} +/-=${currentStats.plusMinus}`);
+                  } else if (!player) {
+                    // Suppress warning if this is a known goalie appearing in the skater section (harmless)
+                    const isKnownGoalie = updatedRoster.find(p => p.number === number && p.position === 'G');
+                    if (!isKnownGoalie) {
+                      console.log(`\u26a0\ufe0f No roster match: #${number} ${cleanName}`);
                     }
-                    
+                  }
+
+                } else if (inGoalieSection) {
+                  const player = updatedRoster.find(p =>
+                    p.number === number &&
+                    p.position === 'G' &&
+                    (p.name === cleanName ||
+                     p.name.replace(/\s*\(Capt\.?\)/i,'').replace(/\*/g,'').trim() === cleanName ||
+                     p.lastName === cleanName.split(' ').pop())
+                  );
+
+                  if (player && player.goalieStats && fields.length >= (10 + fieldOffset)) {
                     const currentGoalieStats = {
-                      gp: parseInt(fields[2 + fieldOffset]) || 0,
-                      min: fields[3 + fieldOffset] || '0:00',
-                      w: parseInt(fields[4 + fieldOffset]) || 0,
-                      l: parseInt(fields[5 + fieldOffset]) || 0,
-                      t: parseInt(fields[6 + fieldOffset]) || 0,
-                      sog: parseInt(fields[7 + fieldOffset]) || 0,
-                      ga: parseInt(fields[8 + fieldOffset]) || 0,
-                      sv: parseInt(fields[9 + fieldOffset]) || 0,
+                      gp:  parseInt(fields[2 + fieldOffset])    || 0,
+                      min: fields[3 + fieldOffset]              || '0:00',
+                      w:   parseInt(fields[4 + fieldOffset])    || 0,
+                      l:   parseInt(fields[5 + fieldOffset])    || 0,
+                      t:   parseInt(fields[6 + fieldOffset])    || 0,
+                      sog: parseInt(fields[7 + fieldOffset])    || 0,
+                      ga:  parseInt(fields[8 + fieldOffset])    || 0,
+                      sv:  parseInt(fields[9 + fieldOffset])    || 0,
                       gaa: parseFloat(fields[10 + fieldOffset]) || 0,
-                      svp: fields[11 + fieldOffset] || '.000',
-                      so: parseInt(fields[12 + fieldOffset]) || 0
+                      svp: fields[11 + fieldOffset]             || '.000',
+                      so:  parseInt(fields[12 + fieldOffset])   || 0
                     };
-                    
-                    player.goalieStats = currentGoalieStats;
-                    
-                    const baseCareer = player.baseCareerGoalieStats || { gp: 0, min: '0:00', w: 0, l: 0, t: 0, so: 0, ga: 0, sv: 0 };
-                    
-                    const parseMinutes = (minStr) => {
-                      const parts = minStr.split(':');
-                      return parseInt(parts[0]) * 60 + parseInt(parts[1] || 0);
-                    };
-                    
-                    const baseSeconds = parseMinutes(baseCareer.min);
-                    const currSeconds = parseMinutes(currentGoalieStats.min);
-                    const totalSeconds = baseSeconds + currSeconds;
-                    const totalMinStr = `${Math.floor(totalSeconds / 60)}:${String(totalSeconds % 60).padStart(2, '0')}`;
-                    
-                    const totalGA = baseCareer.ga + currentGoalieStats.ga;
-                    const totalSV = baseCareer.sv + currentGoalieStats.sv;
+
+                    const newGrade = (statsGrade && !player.grade) ? statsGrade : player.grade;
+                    const base = player.baseCareerGoalieStats || { gp:0, min:'0:00', w:0, l:0, t:0, so:0, ga:0, sv:0 };
+                    const parseMin = (s) => { const p=(s||'0:00').split(':'); return parseInt(p[0])*60+parseInt(p[1]||0); };
+                    const totalSec = parseMin(base.min) + parseMin(currentGoalieStats.min);
+                    const totalMin = `${Math.floor(totalSec/60)}:${String(totalSec%60).padStart(2,'0')}`;
+                    const totalGA  = base.ga + currentGoalieStats.ga;
+                    const totalSV  = base.sv + currentGoalieStats.sv;
                     const totalSOG = totalGA + totalSV;
-                    
-                    const totalMinutes = totalSeconds / 60;
-                    const careerGAA = totalMinutes > 0 ? (totalGA / (totalMinutes / 51)).toFixed(2) : '0.00';
-                    const careerSVP = totalSOG > 0 ? (totalSV / totalSOG).toFixed(3) : '.000';
-                    
-                    player.careerGoalieStats = {
-                      gp: baseCareer.gp + currentGoalieStats.gp,
-                      min: totalMinStr,
-                      w: baseCareer.w + currentGoalieStats.w,
-                      l: baseCareer.l + currentGoalieStats.l,
-                      t: baseCareer.t + currentGoalieStats.t,
-                      so: baseCareer.so + currentGoalieStats.so,
-                      ga: totalGA,
-                      sv: totalSV,
-                      gaa: parseFloat(careerGAA),
-                      svp: careerSVP
+                    const totalMinF = totalSec / 60;
+
+                    const idx = updatedRoster.indexOf(player);
+                    updatedRoster[idx] = {
+                      ...player,
+                      grade: newGrade,
+                      goalieStats: currentGoalieStats,
+                      careerGoalieStats: {
+                        gp: base.gp+currentGoalieStats.gp, min: totalMin,
+                        w: base.w+currentGoalieStats.w, l: base.l+currentGoalieStats.l,
+                        t: base.t+currentGoalieStats.t, so: base.so+currentGoalieStats.so,
+                        ga: totalGA, sv: totalSV,
+                        gaa: parseFloat(totalMinF > 0 ? (totalGA/(totalMinF/51)).toFixed(2) : '0.00'),
+                        svp: totalSOG > 0 ? (totalSV/totalSOG).toFixed(3) : '.000'
+                      }
                     };
-                    
-                    console.log(`✓ Updated goalie ${cleanName}:`, player.goalieStats, 'Career:', player.careerGoalieStats);
+                    console.log(`\u2713 Goalie ${cleanName}: GP=${currentGoalieStats.gp} MIN=${currentGoalieStats.min} W=${currentGoalieStats.w} L=${currentGoalieStats.l}`);
+                  } else if (!player) {
+                    console.log(`\u26a0\ufe0f No goalie match: #${number} ${cleanName}`);
                   }
                 }
               }
-              
-              // V8.0: Update stats for players ALREADY IN LINES
-              console.log('🔄 Updating stats for players in lines...');
+
+              // Update stats for players already assigned to lines
               setLines(prevLines => {
-                const newLines = { ...prevLines };
-                const updatePlayerInSlot = (player) => {
-                  if (!player) return player;
-                  const updatedPlayer = updatedRoster.find(p => p.id === player.id);
-                  return updatedPlayer || player;
-                };
-                ['line1', 'line2', 'line3', 'line4'].forEach(line => {
-                  if (newLines[line]) {
-                    newLines[line].lw = updatePlayerInSlot(newLines[line].lw);
-                    newLines[line].c = updatePlayerInSlot(newLines[line].c);
-                    newLines[line].rw = updatePlayerInSlot(newLines[line].rw);
-                  }
+                const nl = { ...prevLines };
+                const upd = (p) => { if (!p) return p; return updatedRoster.find(r => r.id===p.id)||p; };
+                ['line1','line2','line3','line4'].forEach(l => {
+                  if (nl[l]) { nl[l].lw=upd(nl[l].lw); nl[l].c=upd(nl[l].c); nl[l].rw=upd(nl[l].rw); }
                 });
-                ['d1', 'd2', 'd3'].forEach(dPair => {
-                  if (newLines[dPair]) {
-                    newLines[dPair].ld = updatePlayerInSlot(newLines[dPair].ld);
-                    newLines[dPair].rd = updatePlayerInSlot(newLines[dPair].rd);
-                  }
+                ['d1','d2','d3'].forEach(d => {
+                  if (nl[d]) { nl[d].ld=upd(nl[d].ld); nl[d].rd=upd(nl[d].rd); }
                 });
-                if (newLines.goalies) {
-                  newLines.goalies.starter = updatePlayerInSlot(newLines.goalies.starter);
-                  newLines.goalies.backup = updatePlayerInSlot(newLines.goalies.backup);
-                }
-                return newLines;
+                if (nl.goalies) { nl.goalies.starter=upd(nl.goalies.starter); nl.goalies.backup=upd(nl.goalies.backup); }
+                return nl;
               });
-              
+
               return updatedRoster;
             } catch (error) {
               console.error('Error parsing player stats:', error);
@@ -2790,148 +2143,6 @@
             }
           };
 
-          const parseCareerStats = (text, existingRoster) => {
-            try {
-              console.log('=== parseCareerStats called ===');
-              const lines = text.split('\n').map(l => l.trim()).filter(l => l);
-              
-              const updatedRoster = [...existingRoster];
-              let inSkaterSection = false;
-              let inGoalieSection = false;
-              
-              for (let i = 0; i < lines.length; i++) {
-                const line = lines[i];
-                
-                if (line.toUpperCase() === 'SKATER') {
-                  inSkaterSection = true;
-                  inGoalieSection = false;
-                  continue;
-                }
-                if (line.toUpperCase() === 'GOALIE') {
-                  inSkaterSection = false;
-                  inGoalieSection = true;
-                  continue;
-                }
-                
-                if (line === '#' || line === 'Name' || line === 'GP' || line.includes('AVG PTS')) continue;
-                
-                const fields = line.split('\t').filter(f => f.trim());
-                
-                if (fields.length < 3) continue;
-                
-                const number = fields[0];
-                const name = fields[1];
-                
-                if (!/^\d+$/.test(number)) continue;
-                
-                if (inSkaterSection) {
-                  const normalizedNumber = number.trim();
-                  const cleanCareerName = name.replace(/\s*\(Capt\.?\)/i, '').replace(/\*/g, '').trim();
-                  const careerNameParts = cleanCareerName.split(/\s+/);
-                  // Use first 3 chars to distinguish siblings (e.g., Jonny vs Joe McCabe)
-                  const careerFirstChars = careerNameParts[0]?.substring(0, 3)?.toUpperCase() || '';
-                  const careerLastName = careerNameParts[careerNameParts.length - 1]?.toUpperCase() || '';
-                  
-                  let player = updatedRoster.find(p => {
-                    if (p.position === 'G') return false;
-                    
-                    const rosterFirstChars = p.firstName?.substring(0, 3)?.toUpperCase() || '';
-                    const rosterLastName = p.lastName?.toUpperCase() || '';
-                    
-                    const nameMatch = rosterLastName === careerLastName && rosterFirstChars === careerFirstChars;
-                    const numberMatch = p.number.toString().trim() === normalizedNumber;
-                    
-                    return nameMatch || numberMatch;
-                  });
-                  
-                  if (player && fields.length >= 6) {
-                    const seasonGP = parseInt(fields[2]) || 0;
-                    const seasonG = parseInt(fields[3]) || 0;
-                    const seasonA = parseInt(fields[4]) || 0;
-                    const seasonPts = parseInt(fields[5]) || 0;
-                    const seasonPlusMinus = parseInt(fields[19]) || 0;
-                    const seasonFOW = parseInt(fields[14]) || 0;
-                    const seasonFOL = parseInt(fields[15]) || 0;
-                    const seasonBS = parseInt(fields[16]) || 0;
-                    
-                    const existing = player.baseCareerStats || { gp: 0, g: 0, a: 0, pts: 0, plusMinus: 0, fow: 0, fol: 0, bs: 0 };
-                    
-                    player.baseCareerStats = {
-                      gp: existing.gp + seasonGP,
-                      g: existing.g + seasonG,
-                      a: existing.a + seasonA,
-                      pts: existing.pts + seasonPts,
-                      plusMinus: existing.plusMinus + seasonPlusMinus,
-                      fow: existing.fow + seasonFOW,
-                      fol: existing.fol + seasonFOL,
-                      bs: (existing.bs || 0) + seasonBS
-                    };
-                    
-                    console.log(`✓ Base career for ${name}:`, player.baseCareerStats);
-                  }
-                } else if (inGoalieSection) {
-                  const normalizedNumber = number.trim();
-                  const cleanCareerName = name.replace(/\s*\(Capt\.?\)/i, '').replace(/\*/g, '').trim();
-                  const careerNameParts = cleanCareerName.split(/\s+/);
-                  // Use first 3 chars to distinguish siblings (e.g., Jonny vs Joe McCabe)
-                  const careerFirstChars = careerNameParts[0]?.substring(0, 3)?.toUpperCase() || '';
-                  const careerLastName = careerNameParts[careerNameParts.length - 1]?.toUpperCase() || '';
-                  
-                  let player = updatedRoster.find(p => {
-                    if (p.position !== 'G') return false;
-                    
-                    const rosterFirstChars = p.firstName?.substring(0, 3)?.toUpperCase() || '';
-                    const rosterLastName = p.lastName?.toUpperCase() || '';
-                    
-                    const nameMatch = rosterLastName === careerLastName && rosterFirstChars === careerFirstChars;
-                    const numberMatch = p.number.toString().trim() === normalizedNumber;
-                    
-                    return nameMatch || numberMatch;
-                  });
-                  
-                  if (player && fields.length >= 10) {
-                    const seasonGP = parseInt(fields[2]) || 0;
-                    const seasonMin = fields[3] || '0:00';
-                    const seasonW = parseInt(fields[4]) || 0;
-                    const seasonL = parseInt(fields[5]) || 0;
-                    const seasonT = parseInt(fields[6]) || 0;
-                    const seasonSO = parseInt(fields[12]) || 0;
-                    const seasonGA = parseInt(fields[8]) || 0;
-                    const seasonSV = parseInt(fields[9]) || 0;
-                    
-                    const parseMinutes = (minStr) => {
-                      const parts = minStr.split(':');
-                      return parseInt(parts[0]) * 60 + parseInt(parts[1] || 0);
-                    };
-                    
-                    const existing = player.baseCareerGoalieStats || { gp: 0, min: '0:00', w: 0, l: 0, t: 0, so: 0, ga: 0, sv: 0 };
-                    const existingSeconds = parseMinutes(existing.min);
-                    const seasonSeconds = parseMinutes(seasonMin);
-                    const totalSeconds = existingSeconds + seasonSeconds;
-                    const totalMinStr = `${Math.floor(totalSeconds / 60)}:${String(totalSeconds % 60).padStart(2, '0')}`;
-                    
-                    player.baseCareerGoalieStats = {
-                      gp: existing.gp + seasonGP,
-                      min: totalMinStr,
-                      w: existing.w + seasonW,
-                      l: existing.l + seasonL,
-                      t: existing.t + seasonT,
-                      so: existing.so + seasonSO,
-                      ga: existing.ga + seasonGA,
-                      sv: existing.sv + seasonSV
-                    };
-                    
-                    console.log(`✓ Base career goalie for ${name}:`, player.baseCareerGoalieStats);
-                  }
-                }
-              }
-              
-              return updatedRoster;
-            } catch (error) {
-              console.error('Error parsing career stats:', error);
-              return existingRoster;
-            }
-          };
 
           const parseTeamStats = (text) => {
             try {
@@ -3171,6 +2382,19 @@
                 if (parsed.homeArena && !myTeamSetup.arena) {
                   setMyTeamSetup(prev => ({ ...prev, arena: parsed.homeArena }));
                 }
+                // Clear opponent data for new game
+                setOpponentData({
+                  teamName: '', nickname: '', record: { w: 0, l: 0, t: 0 },
+                  section: '', conference: '',
+                  stats: { ppPct: 0, pkPct: 0, gpg: 0, gapg: 0, ppGoals: 0, ppOpp: 0, pkOpp: 0, pkGoalsAllowed: 0 },
+                  roster: [],
+                  headCoach: { name: '', careerRecord: { w: 0, l: 0, t: 0 }, seasonRecord: { w: 0, l: 0, t: 0 } },
+                  assistantCoaches: []
+                });
+                setOpponentLogo(null);
+                setOpponentColors({ primary: '#dc2626', secondary: '#991b1b' });
+                setOppSpecialTeamsManual({ shga: '', shg: '', ppg: '', pkga: '' });
+                console.log('🧹 Opponent data cleared for new game');
               } else if (importStep === 'myTeamRoster') {
                 console.log('🔧 Importing MY TEAM roster...');
                 let roster = parseRoster(text, myTeamData.roster);
@@ -3220,6 +2444,7 @@
               }
               
               setImportText('');
+              setSafariDetected(false);
               
               const currentIdx = importSteps.findIndex(s => s.key === importStep);
               if (currentIdx < importSteps.length - 1) {
@@ -3286,6 +2511,7 @@
             }
             
             setImportText('');
+            setSafariDetected(false);
             const currentIdx = importSteps.findIndex(s => s.key === importStep);
             if (currentIdx > 0) {
               setImportStep(importSteps[currentIdx - 1].key);
@@ -3465,7 +2691,7 @@
                     const seasonPlusMinus = parseInt(fields[19]) || 0;
                     const seasonFOW = parseInt(fields[14]) || 0;
                     const seasonFOL = parseInt(fields[15]) || 0;
-                    const seasonBS = parseInt(fields[16]) || 0;
+                    const seasonBS = parseInt(fields[18]) || 0;
                     
                     if (careerData[key]?.type === 'goalie') {
                       console.log(`⚠️ Skipping skater stats for ${name} - already saved as goalie`);
@@ -3581,9 +2807,10 @@
             
             const isGoalie = player.position === 'G';
             
-            const faceoffPct = stats.fow + stats.fol > 0 
-              ? ((stats.fow / (stats.fow + stats.fol)) * 100).toFixed(1)
-              : '0.0';
+            const hasFaceoffs = (stats.fow + stats.fol) > 0;
+            const faceoffPct = hasFaceoffs 
+              ? Math.round((stats.fow / (stats.fow + stats.fol)) * 100)
+              : 0;
             
             const getGradeLabel = (grade) => {
               const gradeMap = { '9': 'Fr.', '10': 'So.', '11': 'Jr.', '12': 'Sr.' };
@@ -3604,7 +2831,7 @@
             };
             
             const gradeText = getGradeLabel(player.grade);
-            const gradeDisplay = player.dobYear ? `${gradeText} - ${player.dobYear}` : gradeText;
+            const gradeDisplay = player.dobYear ? `${gradeText} ${player.dobYear}` : gradeText;
             
             const positionText = isGoalie 
               ? (player.shoots === 'L' ? 'Left Catch' : player.shoots === 'R' ? 'Right Catch' : '')
@@ -3655,9 +2882,18 @@
               }
               
               if (pronunciationRef.current && pronunciation) {
-                const maxPronunciationSize = isPreview ? 10 * 0.3125 : 10;
-                const minPronunciationSize = isPreview ? 2.5 : 6;
-                resizeText(pronunciationRef.current, maxPronunciationSize, minPronunciationSize);
+                // Clear transform before measuring
+                pronunciationRef.current.style.transform = '';
+                // Only shrink if text WIDTH exceeds the frame — never shrink due to height
+                let fontSize = isPreview ? 10 * 0.3125 : 10;
+                const minSize = isPreview ? 2.5 : 6;
+                pronunciationRef.current.style.fontSize = `${fontSize}pt`;
+                while (pronunciationRef.current.scrollWidth > pronunciationRef.current.offsetWidth && fontSize > minSize) {
+                  fontSize -= 0.5;
+                  pronunciationRef.current.style.fontSize = `${fontSize}pt`;
+                }
+                // Apply shift after size is locked in
+                pronunciationRef.current.style.transform = 'translateY(2px)';
               }
             }, [player.number, player.name, pronunciation, isGoalie, isPreview, hasLogos]);
             
@@ -3685,6 +2921,7 @@
                   justifyContent: 'flex-start',
                   borderRight: '2px solid #333',
                   paddingRight: '2px',
+                  paddingBottom: '2px',
                   overflow: 'hidden'
                 }}>
                   {/* Number — normal size, original resize behavior */}
@@ -3791,7 +3028,7 @@
                   
                   {!isGoalie ? (
                     <>
-                      {/* Season Row 1: GP, +/-, Pts */}
+                      {/* Season Row 1: GP, Pts, +/- */}
                       <div style={{ 
                         display: 'flex',
                         justifyContent: 'space-between',
@@ -3802,8 +3039,8 @@
                         overflow: 'hidden'
                       }}>
                         <span>25-26: GP {stats.gp}</span>
+                        <span>Pts.{stats.g}-{stats.a}--{stats.pts}</span>
                         {showPlusMinus && <span>+/- {formatPlusMinus(stats.plusMinus)}</span>}
-                        <span>Pts. {stats.g}-{stats.a}--{stats.pts}</span>
                       </div>
                       
                       {/* Season Row 2: PIM, BS, Faceoff */}
@@ -3818,10 +3055,10 @@
                       }}>
                         {showPIM && <span>PIM {stats.pim}</span>}
                         {showBlockedShots && <span>BS {stats.bs || 0}</span>}
-                        {showFaceoffs && <span>Faceoff {faceoffPct}%</span>}
+                        {showFaceoffs && hasFaceoffs && <span>Faceoffs {faceoffPct}%</span>}
                       </div>
                       
-                      {/* Career Row 1: GP, +/-, Pts */}
+                      {/* Career Row 1: GP, Pts, +/- */}
                       <div style={{ 
                         display: 'flex',
                         justifyContent: 'space-between',
@@ -3832,8 +3069,8 @@
                         overflow: 'hidden'
                       }}>
                         <span>Career: GP {careerStats.gp}</span>
+                        <span>Pts.{careerStats.g}-{careerStats.a}--{careerStats.pts}</span>
                         {showPlusMinus && <span>+/- {formatPlusMinus(careerStats.plusMinus)}</span>}
-                        <span>Pts. {careerStats.g}-{careerStats.a}--{careerStats.pts}</span>
                       </div>
                       
                       {/* Career Row 2: PIM, BS, Faceoff */}
@@ -3848,7 +3085,7 @@
                       }}>
                         {showPIM && <span>PIM {careerStats.pim || 0}</span>}
                         {showBlockedShots && <span>BS {careerStats.bs || 0}</span>}
-                        {showFaceoffs && <span>Faceoff {careerStats.faceoffPct}%</span>}
+                        {showFaceoffs && parseFloat(careerStats.faceoffPct) > 0 && <span>Faceoffs {Math.round(parseFloat(careerStats.faceoffPct))}%</span>}
                       </div>
                     </>
                   ) : (
@@ -3876,8 +3113,8 @@
                         overflow: 'hidden'
                       }}>
                         {showPIM && <span>PIM {goalieStats.pim || 0}</span>}
-                        <span>Rec. {goalieStats.w}-{goalieStats.l}-{goalieStats.t} (SO {goalieStats.so})</span>
-                        <span>S% {formatSvp(goalieStats.svp)}</span>
+                        <span>Rec. {goalieStats.w}-{goalieStats.l}-{goalieStats.t}(SO {goalieStats.so})</span>
+                        <span>SV%{formatSvp(goalieStats.svp)}</span>
                       </div>
                       
                       <div style={{ 
@@ -3903,8 +3140,8 @@
                         overflow: 'hidden'
                       }}>
                         {showPIM && <span>PIM {careerGoalieStats.pim || 0}</span>}
-                        <span>Rec. {careerGoalieStats.w}-{careerGoalieStats.l}-{careerGoalieStats.t} (SO {careerGoalieStats.so})</span>
-                        <span>S% {formatSvp(careerGoalieStats.svp)}</span>
+                        <span>Rec. {careerGoalieStats.w}-{careerGoalieStats.l}-{careerGoalieStats.t}(SO {careerGoalieStats.so})</span>
+                        <span>SV%{formatSvp(careerGoalieStats.svp)}</span>
                       </div>
                     </>
                   )}
@@ -4311,7 +3548,7 @@
                     
                     <div className="p-6">
                       <div className="bg-purple-50 p-4 rounded mb-4">
-                        <h3 className="font-bold mb-2">📦 Subscriber Build Export v16.0</h3>
+                        <h3 className="font-bold mb-2">📦 Subscriber Build Export v16.8</h3>
                         <p className="text-sm text-gray-600 mb-2">
                           Copy this JSON configuration and paste it into the Legacy Line Charts Claude project to build a customized subscriber version.
                         </p>
@@ -4453,11 +3690,29 @@
                           </div>
                           <textarea
                             value={importText}
-                            onChange={(e) => setImportText(e.target.value)}
+                            onChange={(e) => {
+                              const text = e.target.value;
+                              // Safari detection: unique markers in Safari paste output
+                              const isSafari = text.includes('Need Help? ✋') ||
+                                              /^SKATER\s*$/m.test(text) ||
+                                              /^GOALIE\s*$/m.test(text);
+                              if (isSafari) {
+                                setSafariDetected(true);
+                                setImportText('');
+                              } else {
+                                setSafariDetected(false);
+                                setImportText(text);
+                              }
+                            }}
                             placeholder="Paste text here..."
                             className="w-full border rounded px-3 py-2 font-mono text-xs"
                             rows="12"
                           />
+                          {safariDetected && (
+                            <div className="mt-2 bg-red-600 text-white rounded p-3 font-bold text-sm text-center">
+                              🚫 Coach, Legacy Line Charts is not compatible with Safari, please use Chrome or Edge for your data entry.
+                            </div>
+                          )}
                         </div>
                       )}
                     </div>
@@ -4465,11 +3720,13 @@
                     <div className="border-t px-6 py-4 flex justify-between">
                       <button
                         onClick={handleBackStep}
-                        className="bg-gray-400 text-white px-6 py-2 rounded hover:bg-gray-500"
+                        disabled={safariDetected}
+                        className={`px-6 py-2 rounded text-white ${safariDetected ? 'bg-gray-300 cursor-not-allowed' : 'bg-gray-400 hover:bg-gray-500'}`}
                       >
                         Save & Back
                       </button>
                       <button
+                        disabled={safariDetected}
                         onClick={() => {
                           if (importText.trim()) {
                             handleImport();
@@ -4482,7 +3739,7 @@
                             }
                           }
                         }}
-                        className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700"
+                        className={`px-6 py-2 rounded text-white ${safariDetected ? 'bg-gray-300 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'}`}
                       >
                         {importSteps.findIndex(s => s.key === importStep) === importSteps.length - 1 ? 'Save & Close' : 'Save & Next'}
                       </button>
@@ -4624,43 +3881,43 @@
                   background: `linear-gradient(to right, ${myTeamSetup.colors.secondary} 0%, white 34%, white 66%, ${opponentColors.secondary} 100%)`,
                   border: `2px solid black`,
                   display: 'grid',
-                  gridTemplateColumns: '18% 12% 8% 24% 8% 12% 18%',
+                  gridTemplateColumns: '18fr 12fr 8fr 24fr 8fr 12fr 18fr',
+                  gridAutoRows: '1fr',
+                  alignItems: 'stretch',
                   gap: '2px',
-                  padding: '2px'
+                  padding: '2px',
+                  overflow: 'hidden'
                 }}>
                   {/* C1 (18%) - MY TEAM LAST/NEXT GAMES */}
-                  <div className="flex flex-col justify-between text-center" style={{ padding: '4px', overflow: 'hidden' }}>
-                    <div className="flex-1 flex flex-col justify-center">
+                  <div className="flex flex-col justify-between text-center" style={{ padding: '4px 2px 4px 4px', overflow: 'hidden', minHeight: 0 }}>
+                    <div style={{ flex: '1 1 0', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                       <div style={{ fontSize: 'clamp(9px, 1vw, 12px)', color: leftGameTextColor }} className="font-bold">LAST GAME</div>
                       {myTeamData.lastGame ? (
                         <>
-                          <div style={{ fontSize: 'clamp(10px, 1.1vw, 13px)', wordWrap: 'break-word', color: leftGameTextColor }} className="leading-tight">
-                            {myTeamData.teamName} <span className={`font-black`} style={{ 
-  				color: leftGameTextColor
-			}}>{myTeamData.lastGame.ourScore} - {myTeamData.lastGame.oppScore}</span> {myTeamData.lastGame.opponent}
+                          <div style={{ fontSize: 'clamp(10px, 1.1vw, 13px)', color: leftGameTextColor, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }} className="leading-tight">
+                            {myTeamData.teamName} <span className="font-black" style={{ color: leftGameTextColor }}>{myTeamData.lastGame.ourScore} - {myTeamData.lastGame.oppScore}</span> {myTeamData.lastGame.opponent}
                           </div>
-                          <div style={{ fontSize: 'clamp(8px, 0.9vw, 10px)', wordWrap: 'break-word', color: leftGameTextColor }}>{myTeamData.lastGame.date}</div>
+                          <div style={{ fontSize: 'clamp(8px, 0.9vw, 10px)', color: leftGameTextColor, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{myTeamData.lastGame.date}</div>
                           {myTeamData.lastGame.location && (
-                            <div style={{ fontSize: 'clamp(7px, 0.8vw, 9px)', wordWrap: 'break-word', color: leftGameTextColor, fontStyle: 'italic' }}>{myTeamData.lastGame.location}</div>
+                            <div style={{ fontSize: 'clamp(7px, 0.8vw, 9px)', color: leftGameTextColor, fontStyle: 'italic', overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>{myTeamData.lastGame.location}</div>
                           )}
                         </>
                       ) : (
                         <div style={{ fontSize: 'clamp(10px, 1.1vw, 13px)', color: leftGameTextColor }}>N/A</div>
                       )}
                     </div>
-                    
-                    <div className="flex-1 flex flex-col justify-center">
+                    <div style={{ flex: '1 1 0', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                       <div style={{ fontSize: 'clamp(9px, 1vw, 12px)', color: leftGameTextColor }} className="font-bold">NEXT GAME</div>
                       {myTeamData.nextGame && myTeamData.nextGame.opponent && myTeamData.nextGame.opponent !== 'TBD' ? (
                         <>
-                          <div style={{ fontSize: 'clamp(10px, 1.1vw, 13px)', wordWrap: 'break-word', color: leftGameTextColor }} className="font-bold leading-tight">
+                          <div style={{ fontSize: 'clamp(10px, 1.1vw, 13px)', color: leftGameTextColor, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }} className="font-bold">
                             {myTeamData.nextGame.isHome ? 'vs' : 'at'} {myTeamData.nextGame.opponent}
                           </div>
-                          <div style={{ fontSize: 'clamp(8px, 0.9vw, 10px)', wordWrap: 'break-word', color: leftGameTextColor }}>
+                          <div style={{ fontSize: 'clamp(8px, 0.9vw, 10px)', color: leftGameTextColor, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
                             {myTeamData.nextGame.date} @ {myTeamData.nextGame.time}
                           </div>
                           {myTeamData.nextGame.location && (
-                            <div style={{ fontSize: 'clamp(7px, 0.8vw, 9px)', wordWrap: 'break-word', color: leftGameTextColor, fontStyle: 'italic' }}>
+                            <div style={{ fontSize: 'clamp(7px, 0.8vw, 9px)', color: leftGameTextColor, fontStyle: 'italic', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
                               {myTeamData.nextGame.location}
                             </div>
                           )}
@@ -4672,27 +3929,29 @@
                   </div>
 
                   {/* C2 (12%) - MY TEAM LOGO/COACH/RECORD */}
-                  <div className="flex flex-col items-center text-center gap-1">
+                  <div className="flex flex-col items-center text-center gap-1" style={{ overflow: 'hidden', minHeight: 0 }}>
                     <div className="flex items-center justify-center" style={{ 
-                      width: '100%', 
-                      height: '85px',
+                      width: '100%',
+                      maxHeight: '85px',
+                      flex: '0 0 auto',
                       backgroundColor: '#EFEFEF',
                       borderRadius: '4px',
                       padding: '4px',
                       border: `2px solid ${myTeamSetup.colors.primary}`,
-                      boxShadow: `inset 0 0 0 1px ${myTeamSetup.colors.secondary}`
+                      boxShadow: `inset 0 0 0 1px ${myTeamSetup.colors.secondary}`,
+                      boxSizing: 'border-box'
                     }}>
                       {myTeamSetup.logo && (
-                        <img src={myTeamSetup.logo} alt="Team" className="object-contain" style={{ maxHeight: '77px', width: '100%' }} />
+                        <img src={myTeamSetup.logo} alt="Team" className="object-contain" style={{ maxHeight: '77px', maxWidth: '100%' }} />
                       )}
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col" style={{ overflow: 'hidden', minHeight: 0 }}>
                       <div style={{ fontSize: 'clamp(9px, 1vw, 12px)', lineHeight: '1.1', wordBreak: 'break-word', color: myTeamSetup.colors.primary }} className="font-bold">{myTeamData.headCoach.name}</div>
                       <div style={{ fontSize: 'clamp(7px, 0.8vw, 9px)', color: myTeamSetup.colors.primary }}>(Career: {totalCoachRecord.w}-{totalCoachRecord.l}-{totalCoachRecord.t})</div>
                       {myTeamData.assistantCoaches && myTeamData.assistantCoaches.length > 0 && (
-                        <div style={{ fontSize: 'clamp(8px, 0.9vw, 10px)', marginTop: '2px', color: myTeamSetup.colors.primary }}>
+                        <div style={{ fontSize: 'clamp(8px, 0.9vw, 10px)', marginTop: '2px', color: myTeamSetup.colors.primary, overflow: 'hidden' }}>
                           <div className="font-semibold">Assistant Coaches:</div>
-                          <div>{myTeamData.assistantCoaches.join(', ')}</div>
+                          <div style={{ overflow: 'hidden' }}>{myTeamData.assistantCoaches.join(', ')}</div>
                         </div>
                       )}
                     </div>
@@ -4772,65 +4031,64 @@
                   </div>
 
                   {/* C6 (12%) - OPPONENT LOGO/COACH/RECORD */}
-                  <div className="flex flex-col items-center text-center gap-1">
+                  <div className="flex flex-col items-center text-center gap-1" style={{ overflow: 'hidden', minHeight: 0 }}>
                     <div className="flex items-center justify-center" style={{ 
                       width: '100%', 
-                      height: '85px',
+                      maxHeight: '85px',
+                      flex: '0 0 auto',
                       backgroundColor: '#EFEFEF',
                       borderRadius: '4px',
                       padding: '4px',
                       border: `2px solid ${opponentColors.primary}`,
-                      boxShadow: `inset 0 0 0 1px ${opponentColors.secondary}`
+                      boxShadow: `inset 0 0 0 1px ${opponentColors.secondary}`,
+                      boxSizing: 'border-box'
                     }}>
                       {opponentLogo && (
-                        <img src={opponentLogo} alt="Opponent" className="object-contain" style={{ maxHeight: '77px', width: '100%' }} />
+                        <img src={opponentLogo} alt="Opponent" className="object-contain" style={{ maxHeight: '77px', maxWidth: '100%' }} />
                       )}
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col" style={{ overflow: 'hidden', minHeight: 0 }}>
                       <div style={{ fontSize: 'clamp(9px, 1vw, 12px)', lineHeight: '1.1', wordBreak: 'break-word', color: opponentColors.primary }} className="font-bold">{opponentData.headCoach.name}</div>
                       <div style={{ fontSize: 'clamp(7px, 0.8vw, 9px)', color: opponentColors.primary }}>(Career: {totalOppCoachRecord.w}-{totalOppCoachRecord.l}-{totalOppCoachRecord.t})</div>
                       {opponentData.assistantCoaches && opponentData.assistantCoaches.length > 0 && (
-                        <div style={{ fontSize: 'clamp(8px, 0.9vw, 10px)', marginTop: '2px', color: opponentColors.primary }}>
+                        <div style={{ fontSize: 'clamp(8px, 0.9vw, 10px)', marginTop: '2px', color: opponentColors.primary, overflow: 'hidden' }}>
                           <div className="font-semibold">Assistant Coaches:</div>
-                          <div>{opponentData.assistantCoaches.join(', ')}</div>
+                          <div style={{ overflow: 'hidden' }}>{opponentData.assistantCoaches.join(', ')}</div>
                         </div>
                       )}
                     </div>
                   </div>
 
                   {/* C7 (18%) - OPPONENT LAST/NEXT GAMES */}
-                  <div className="flex flex-col justify-between text-center" style={{ padding: '4px', overflow: 'hidden' }}>
-                    <div className="flex-1 flex flex-col justify-center">
+                  <div className="flex flex-col justify-between text-center" style={{ padding: '4px 4px 4px 2px', overflow: 'hidden', minHeight: 0 }}>
+                    <div style={{ flex: '1 1 0', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                       <div style={{ fontSize: 'clamp(9px, 1vw, 12px)', color: rightGameTextColor }} className="font-bold">LAST GAME</div>
                       {opponentData.lastGame ? (
                         <>
-                          <div style={{ fontSize: 'clamp(10px, 1.1vw, 13px)', wordWrap: 'break-word', color: rightGameTextColor }} className="leading-tight">
-                            {opponentData.teamName} <span className={`font-black`} style={{
-  				color: rightGameTextColor
-			}}>{opponentData.lastGame.ourScore} - {opponentData.lastGame.oppScore}</span> {opponentData.lastGame.opponent}
+                          <div style={{ fontSize: 'clamp(10px, 1.1vw, 13px)', color: rightGameTextColor, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }} className="leading-tight">
+                            {opponentData.teamName} <span className="font-black" style={{ color: rightGameTextColor }}>{opponentData.lastGame.ourScore} - {opponentData.lastGame.oppScore}</span> {opponentData.lastGame.opponent}
                           </div>
-                          <div style={{ fontSize: 'clamp(8px, 0.9vw, 10px)', wordWrap: 'break-word', color: rightGameTextColor }}>{opponentData.lastGame.date}</div>
+                          <div style={{ fontSize: 'clamp(8px, 0.9vw, 10px)', color: rightGameTextColor, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{opponentData.lastGame.date}</div>
                           {opponentData.lastGame.location && (
-                            <div style={{ fontSize: 'clamp(7px, 0.8vw, 9px)', wordWrap: 'break-word', color: rightGameTextColor, fontStyle: 'italic' }}>{opponentData.lastGame.location}</div>
+                            <div style={{ fontSize: 'clamp(7px, 0.8vw, 9px)', color: rightGameTextColor, fontStyle: 'italic', overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>{opponentData.lastGame.location}</div>
                           )}
                         </>
                       ) : (
                         <div style={{ fontSize: 'clamp(10px, 1.1vw, 13px)', color: rightGameTextColor }}>N/A</div>
                       )}
                     </div>
-                    
-                    <div className="flex-1 flex flex-col justify-center">
+                    <div style={{ flex: '1 1 0', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                       <div style={{ fontSize: 'clamp(9px, 1vw, 12px)', color: rightGameTextColor }} className="font-bold">NEXT GAME</div>
                       {opponentData.nextGame && opponentData.nextGame.opponent && opponentData.nextGame.opponent !== 'TBD' ? (
                         <>
-                          <div style={{ fontSize: 'clamp(10px, 1.1vw, 13px)', wordWrap: 'break-word', color: rightGameTextColor }} className="font-bold leading-tight">
+                          <div style={{ fontSize: 'clamp(10px, 1.1vw, 13px)', color: rightGameTextColor, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }} className="font-bold">
                             {opponentData.nextGame.isHome ? 'vs' : 'at'} {opponentData.nextGame.opponent}
                           </div>
-                          <div style={{ fontSize: 'clamp(8px, 0.9vw, 10px)', wordWrap: 'break-word', color: rightGameTextColor }}>
+                          <div style={{ fontSize: 'clamp(8px, 0.9vw, 10px)', color: rightGameTextColor, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
                             {opponentData.nextGame.date} @ {opponentData.nextGame.time}
                           </div>
                           {opponentData.nextGame.location && (
-                            <div style={{ fontSize: 'clamp(7px, 0.8vw, 9px)', wordWrap: 'break-word', color: rightGameTextColor, fontStyle: 'italic' }}>
+                            <div style={{ fontSize: 'clamp(7px, 0.8vw, 9px)', color: rightGameTextColor, fontStyle: 'italic', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
                               {opponentData.nextGame.location}
                             </div>
                           )}
@@ -4900,9 +4158,9 @@
                   <div className="flex items-center gap-2 mb-1">
                     <div className="no-print text-xs" style={{ width: '60px' }}></div>
                     <div className="flex-1 grid grid-cols-3 gap-1">
-                      <div className="text-xs font-bold text-center" style={{ fontSize: '11px' }}>Left Wing</div>
-                      <div className="text-xs font-bold text-center" style={{ fontSize: '11px' }}>Center</div>
-                      <div className="text-xs font-bold text-center" style={{ fontSize: '11px' }}>Right Wing</div>
+                      <div className="text-xs font-bold text-center" style={{ fontSize: '11px', backgroundColor: '#222222', color: '#FFFFFF', padding: '2px 0', borderRadius: '4px' }}>LEFT WING</div>
+                      <div className="text-xs font-bold text-center" style={{ fontSize: '11px', backgroundColor: '#222222', color: '#FFFFFF', padding: '2px 0', borderRadius: '4px' }}>CENTER</div>
+                      <div className="text-xs font-bold text-center" style={{ fontSize: '11px', backgroundColor: '#222222', color: '#FFFFFF', padding: '2px 0', borderRadius: '4px' }}>RIGHT WING</div>
                     </div>
                   </div>
                   
@@ -4922,15 +4180,15 @@
 
                 {/* Defense Pairs + Goalies + PK/PP */}
                 <div className="mb-1">
-                  <div className="grid grid-cols-3 gap-2 mb-1">
+                  <div className="grid grid-cols-3 gap-2 mb-0">
                     <h2 style={{ fontSize: '13px' }} className="font-bold col-span-2 text-center">DEFENSE PAIRS</h2>
                     <h2 style={{ fontSize: '13px' }} className="font-bold text-center">GOALIES</h2>
                   </div>
                   
                   <div className="grid grid-cols-3 gap-1 mb-1">
-                    <div className="text-xs font-bold text-center" style={{ fontSize: '11px' }}>Left Defense</div>
-                    <div className="text-xs font-bold text-center" style={{ fontSize: '11px' }}>Right Defense</div>
-                    <div></div>
+                    <div className="text-xs font-bold text-center" style={{ fontSize: '11px', backgroundColor: '#222222', color: '#FFFFFF', padding: '2px 0', borderRadius: '4px' }}>LEFT DEFENSE</div>
+                    <div className="text-xs font-bold text-center" style={{ fontSize: '11px', backgroundColor: '#222222', color: '#FFFFFF', padding: '2px 0', borderRadius: '4px' }}>RIGHT DEFENSE</div>
+                    <div className="text-xs font-bold text-center" style={{ fontSize: '11px', backgroundColor: '#222222', color: '#FFFFFF', padding: '2px 0', borderRadius: '4px' }}>STARTER</div>
                   </div>
 
                   {/* D1 + Starter Goalie */}
@@ -5058,7 +4316,7 @@
                     backgroundColor: `${myTeamSetup.colors.primary}15`,
                     border: `2px solid ${myTeamSetup.colors.primary}`
                   }}>
-                    <span style={{ fontSize: '12px' }} className="font-bold mr-2">Student Manager(s)</span>
+                    <span style={{ fontSize: '12px' }} className="font-bold">Student Manager(s):&nbsp;</span>
                     <input
                       type="text"
                       value={myTeamData.studentManager}
@@ -5069,7 +4327,7 @@
                     />
                   </div>
                   <div className="bg-red-50 border-2 border-red-400 rounded px-2 py-1 flex items-center">
-                    <span style={{ fontSize: '12px' }} className="font-bold mr-2">Injured/Illness</span>
+                    <span style={{ fontSize: '12px' }} className="font-bold">Injured/Illness:&nbsp;</span>
                     <input
                       type="text"
                       value={myTeamData.injuries || ''}
@@ -5088,7 +4346,7 @@
               </div>
 
               {/* Print Page 2 */}
-              <div className="print-page-2 bg-white p-0 max-w-7xl mx-auto page-break" style={{ maxWidth: '7.875in', padding: '0.05in' }}>
+              <div className="print-page-2 bg-white p-0 max-w-7xl mx-auto page-break" style={{ maxWidth: '7.875in', padding: '0.05in', display: 'flex', flexDirection: 'column' }}>
                 {/* Opponent Header - Full Scouting Header */}
                 {(() => {
                   // Top 3 leaders from opponent roster
@@ -5414,13 +4672,13 @@
                 </div>
 
                 {/* Diagrams & Notes */}
-                <div className="mt-2" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-                  <div style={{ display: 'flex', gap: '4px', flexGrow: 1 }}>
+                <div className="mt-2" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', flex: 1, minHeight: 0 }}>
+                  <div style={{ display: 'flex', gap: '4px', flexGrow: 1, minHeight: 0 }}>
                     {/* COLUMN 1: Large diagram (60%) */}
-                    <div style={{ width: '60%', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+                    <div style={{ width: '60%', position: 'relative', display: 'flex', flexDirection: 'column', minHeight: 0 }}>
                       {diagramImages.image1 ? (
-                        <div className="relative w-full flex-1">
-                          <img src={diagramImages.image1} alt="Diagram 1" className="w-full h-full object-contain" />
+                        <div className="relative w-full flex-1" style={{ minHeight: 0, overflow: 'hidden' }}>
+                          <img src={diagramImages.image1} alt="Diagram 1" style={{ width: '100%', height: '100%', maxHeight: '100%', objectFit: 'contain', display: 'block' }} />
                           <button
                             onClick={() => setDiagramImages({...diagramImages, image1: null})}
                             className="no-print absolute top-0 right-0 bg-red-500 text-white text-xs px-2 py-1 rounded hover:bg-red-600"
@@ -5476,10 +4734,10 @@
                     </div>
                     
                     {/* COLUMN 2: Small diagram (20%) */}
-                    <div style={{ width: '20%', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+                    <div style={{ width: '20%', position: 'relative', display: 'flex', flexDirection: 'column', minHeight: 0 }}>
                       {diagramImages.image2 ? (
-                        <div className="relative w-full flex-1">
-                          <img src={diagramImages.image2} alt="Diagram 2" className="w-full h-full object-contain" />
+                        <div className="relative w-full flex-1" style={{ minHeight: 0, overflow: 'hidden' }}>
+                          <img src={diagramImages.image2} alt="Diagram 2" style={{ width: '100%', height: '100%', maxHeight: '100%', objectFit: 'contain', display: 'block' }} />
                           <button
                             onClick={() => setDiagramImages({...diagramImages, image2: null})}
                             className="no-print absolute top-0 right-0 bg-red-500 text-white text-xs px-1 py-0 rounded hover:bg-red-600" style={{ fontSize: '10px' }}
@@ -5535,10 +4793,10 @@
                     </div>
                     
                     {/* COLUMN 3: Small diagram (20%) */}
-                    <div style={{ width: '20%', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+                    <div style={{ width: '20%', position: 'relative', display: 'flex', flexDirection: 'column', minHeight: 0 }}>
                       {diagramImages.image3 ? (
-                        <div className="relative w-full flex-1">
-                          <img src={diagramImages.image3} alt="Diagram 3" className="w-full h-full object-contain" />
+                        <div className="relative w-full flex-1" style={{ minHeight: 0, overflow: 'hidden' }}>
+                          <img src={diagramImages.image3} alt="Diagram 3" style={{ width: '100%', height: '100%', maxHeight: '100%', objectFit: 'contain', display: 'block' }} />
                           <button
                             onClick={() => setDiagramImages({...diagramImages, image3: null})}
                             className="no-print absolute top-0 right-0 bg-red-500 text-white text-xs px-1 py-0 rounded hover:bg-red-600" style={{ fontSize: '10px' }}
@@ -5595,18 +4853,21 @@
                   </div>
                 </div>
                 
-                {/* MSHSL Boys Hockey Logo */}
-                <div style={{ textAlign: 'center', marginTop: '8px', marginBottom: '4px', display: 'flex', justifyContent: 'center' }}>
-                  <img 
-                    src="https://cdn2.sportngin.com/attachments/league/c4e7-208998629/MSHSLboyshockey_large_square.png" 
-                    alt="MSHSL Boys Hockey" 
-                    style={{ width: '0.625in', height: '0.625in', objectFit: 'contain', display: 'block', margin: '0 auto' }}
-                  />
-                </div>
-                
-                {/* Creator Credit - Page 2 */}
-                <div style={{ textAlign: 'center', fontSize: '10px', color: '#000000', marginTop: '4px', paddingTop: '2px', paddingBottom: '2px' }}>
-                  Created exclusively for the {myTeamData.teamName} {myTeamData.nickname} by Legacy Line Charts - legacylinecharts@gmail.com - © Legacy Line Charts
+                {/* Bottom: MSHSL Logo + Creator Credit — always pinned to bottom of page 2 */}
+                <div style={{ flexShrink: 0, paddingBottom: '4pt' }}>
+                  {/* MSHSL Boys Hockey Logo */}
+                  <div style={{ textAlign: 'center', marginTop: '8px', marginBottom: '4px', display: 'flex', justifyContent: 'center' }}>
+                    <img 
+                      src="https://cdn2.sportngin.com/attachments/league/c4e7-208998629/MSHSLboyshockey_large_square.png" 
+                      alt="MSHSL Boys Hockey" 
+                      style={{ width: '0.75in', height: '0.75in', objectFit: 'contain', display: 'block', margin: '0 auto' }}
+                    />
+                  </div>
+                  
+                  {/* Creator Credit - Page 2 */}
+                  <div style={{ textAlign: 'center', fontSize: '10px', color: '#000000', marginTop: '4px', paddingTop: '2px', paddingBottom: '2px' }}>
+                    Created exclusively for the {myTeamData.teamName} {myTeamData.nickname} by Legacy Line Charts - legacylinecharts@gmail.com - © Legacy Line Charts
+                  </div>
                 </div>
               </div>
 
@@ -5649,6 +4910,8 @@
                     page-break-before: always;
                     page-break-after: avoid;
                     page-break-inside: avoid;
+                    display: flex !important;
+                    flex-direction: column !important;
                   }
                   
                   @page {
